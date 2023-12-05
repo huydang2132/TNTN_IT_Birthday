@@ -1,0 +1,132 @@
+.dialog {
+    background-color: var(--color-bg-opacity);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+}
+
+.dialog__container {
+    width: 416px;
+    box-sizing: border-box;
+    background-color: var(--color-white);
+    border-radius: var(--border-radius);
+    box-shadow: 0px 4px 16px var(--color-shadow);
+    margin: 0 10px;
+
+}
+
+.show-dialog {
+    animation: zoomOut 0.3s ease-in-out;
+}
+
+.hide-dialog {
+    animation: zoomIn 0.3s ease-in-out;
+}
+
+.dialog__header {
+    padding: 0 24px;
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dialog__header>h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.dialog__header.success>h3 {
+    color: green;
+}
+
+.dialog__header.warning>h3 {
+    color: orange;
+}
+
+.dialog__header.error>h3 {
+    color: red;
+}
+
+.dialog__header.confirm>h3 {
+    color: blue;
+}
+
+.dialog__header>button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.dialog__body {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 24px;
+    align-items: center;
+}
+
+.dialog__body.success>i {
+    color: green;
+}
+
+.dialog__body.warning>i {
+    color: orange;
+}
+
+.dialog__body.error>i {
+    color: red;
+}
+
+.dialog__body.confirm>i {
+    color: blue;
+}
+
+.dialog__body i {
+    font-size: 35px;
+}
+
+.dialog__body>p {
+    margin-left: 20px;
+}
+
+.dialog__footer {
+    box-sizing: border-box;
+    padding: 24px;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+@keyframes zoomOut {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0);
+    }
+}

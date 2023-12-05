@@ -1,0 +1,105 @@
+@import url(./grid.css);
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+@import 'swiper/css';
+@import 'swiper/css/effect-fade';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+
+@font-face {
+    font-family: Comfortaa-Regular;
+    src: url(../assets/fonts/Comfortaa/static/Comfortaa-Regular.ttf);
+}
+
+@font-face {
+    font-family: Comfortaa-Medium;
+    src: url(../assets/fonts/Comfortaa/static/Comfortaa-Medium.ttf);
+}
+
+@font-face {
+    font-family: Comfortaa-Bold;
+    src: url(../assets/fonts/Comfortaa/static/Comfortaa-Bold.ttf);
+}
+
+@font-face {
+    font-family: Dancing_Script-Regular;
+    src: url(../assets/fonts/Dancing_Script/static/DancingScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: Dancing_Script-Medium;
+    src: url(../assets/fonts/Dancing_Script/static/DancingScript-Medium.ttf);
+}
+
+@font-face {
+    font-family: Dancing_Script-Bold;
+    src: url(../assets/fonts/Dancing_Script/static/DancingScript-Bold.ttf);
+}
+
+:root {
+    --color-text-default: #202a41;
+    --color-primary: #00bdff;
+    --color-focus: #3519d1;
+    --color-button: #005eff;
+    --color-button-hover: rgba(0, 94, 255, 0.6);
+    --color-primary-opacity: rgba(0, 187, 255, 0.4);
+    --color-white: #fff;
+    --color-border: #E0E0E0;
+    --color-outline: #a1e2f9;
+    --color-shadow: #999;
+    --color-shadow-opacity: rgba(22, 22, 22, 0.2);
+    --color-bg-white: #f2eded;
+    --color-bg-opacity: rgba(0, 0, 0, 0.3);
+    --color-bg-input: #f5f5f5;
+    --color-red: red;
+    --color-green: green;
+
+    --outline-offset: 3px;
+    --outline-width: 4px;
+
+    --width-sidebar: 200px;
+    --height-header: 50px;
+    --height-button-default: 40px;
+
+    --font-size-title: 2.4rem;
+
+    --border-radius: 4px;
+
+    --swiper-navigation-size: 36px
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Comfortaa-Medium;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+.Toastify__toast-icon {
+    color: var(--color-white);
+}
+
+.border-err {
+    border: 1px solid var(--color-red) !important;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b9b9b9;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
